@@ -1,0 +1,592 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		180179451CF69ECE009CF421 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 180179441CF69ECE009CF421 /* main.m */; };
+		180179481CF69ECE009CF421 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 180179471CF69ECE009CF421 /* AppDelegate.m */; };
+		1801794B1CF69ECE009CF421 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1801794A1CF69ECE009CF421 /* ViewController.m */; };
+		1801794E1CF69ECE009CF421 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1801794C1CF69ECE009CF421 /* Main.storyboard */; };
+		180179501CF69ECE009CF421 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1801794F1CF69ECE009CF421 /* Assets.xcassets */; };
+		180179531CF69ECE009CF421 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 180179511CF69ECE009CF421 /* LaunchScreen.storyboard */; };
+		1801795E1CF69ECE009CF421 /* DYImageCacheTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1801795D1CF69ECE009CF421 /* DYImageCacheTests.m */; };
+		180179691CF69ECE009CF421 /* DYImageCacheUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 180179681CF69ECE009CF421 /* DYImageCacheUITests.m */; };
+		18B9DC091CF7FDC30098F2E8 /* DYDownloaderOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B9DC031CF7FDC30098F2E8 /* DYDownloaderOperation.m */; };
+		18B9DC0A1CF7FDC30098F2E8 /* DYImageDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B9DC051CF7FDC30098F2E8 /* DYImageDownloader.m */; };
+		18B9DC101CF81B410098F2E8 /* DYImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B9DC0F1CF81B410098F2E8 /* DYImageCache.m */; };
+		18B9DC131CF835DF0098F2E8 /* DYImageCacheManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B9DC121CF835DF0098F2E8 /* DYImageCacheManager.m */; };
+		18B9DC161CF83E800098F2E8 /* UIImageView+DYImageViewCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B9DC151CF83E800098F2E8 /* UIImageView+DYImageViewCache.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1801795A1CF69ECE009CF421 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 180179381CF69ECE009CF421 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1801793F1CF69ECE009CF421;
+			remoteInfo = DYImageCache;
+		};
+		180179651CF69ECE009CF421 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 180179381CF69ECE009CF421 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1801793F1CF69ECE009CF421;
+			remoteInfo = DYImageCache;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		180179401CF69ECE009CF421 /* DYImageCache.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DYImageCache.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		180179441CF69ECE009CF421 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		180179461CF69ECE009CF421 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		180179471CF69ECE009CF421 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		180179491CF69ECE009CF421 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		1801794A1CF69ECE009CF421 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		1801794D1CF69ECE009CF421 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1801794F1CF69ECE009CF421 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		180179521CF69ECE009CF421 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		180179541CF69ECE009CF421 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		180179591CF69ECE009CF421 /* DYImageCacheTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DYImageCacheTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1801795D1CF69ECE009CF421 /* DYImageCacheTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DYImageCacheTests.m; sourceTree = "<group>"; };
+		1801795F1CF69ECE009CF421 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		180179641CF69ECE009CF421 /* DYImageCacheUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DYImageCacheUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		180179681CF69ECE009CF421 /* DYImageCacheUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DYImageCacheUITests.m; sourceTree = "<group>"; };
+		1801796A1CF69ECE009CF421 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18B9DC021CF7FDC30098F2E8 /* DYDownloaderOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYDownloaderOperation.h; sourceTree = "<group>"; };
+		18B9DC031CF7FDC30098F2E8 /* DYDownloaderOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DYDownloaderOperation.m; sourceTree = "<group>"; };
+		18B9DC041CF7FDC30098F2E8 /* DYImageDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYImageDownloader.h; sourceTree = "<group>"; };
+		18B9DC051CF7FDC30098F2E8 /* DYImageDownloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DYImageDownloader.m; sourceTree = "<group>"; };
+		18B9DC0E1CF81B410098F2E8 /* DYImageCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYImageCache.h; sourceTree = "<group>"; };
+		18B9DC0F1CF81B410098F2E8 /* DYImageCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DYImageCache.m; sourceTree = "<group>"; };
+		18B9DC111CF835DF0098F2E8 /* DYImageCacheManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYImageCacheManager.h; sourceTree = "<group>"; };
+		18B9DC121CF835DF0098F2E8 /* DYImageCacheManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DYImageCacheManager.m; sourceTree = "<group>"; };
+		18B9DC141CF83E800098F2E8 /* UIImageView+DYImageViewCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+DYImageViewCache.h"; sourceTree = "<group>"; };
+		18B9DC151CF83E800098F2E8 /* UIImageView+DYImageViewCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+DYImageViewCache.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1801793D1CF69ECE009CF421 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		180179561CF69ECE009CF421 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		180179611CF69ECE009CF421 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		180179371CF69ECE009CF421 = {
+			isa = PBXGroup;
+			children = (
+				180179421CF69ECE009CF421 /* DYImageCache */,
+				1801795C1CF69ECE009CF421 /* DYImageCacheTests */,
+				180179671CF69ECE009CF421 /* DYImageCacheUITests */,
+				180179411CF69ECE009CF421 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		180179411CF69ECE009CF421 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				180179401CF69ECE009CF421 /* DYImageCache.app */,
+				180179591CF69ECE009CF421 /* DYImageCacheTests.xctest */,
+				180179641CF69ECE009CF421 /* DYImageCacheUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		180179421CF69ECE009CF421 /* DYImageCache */ = {
+			isa = PBXGroup;
+			children = (
+				18B9DC001CF7FDC30098F2E8 /* DYImageCache */,
+				180179461CF69ECE009CF421 /* AppDelegate.h */,
+				180179471CF69ECE009CF421 /* AppDelegate.m */,
+				180179491CF69ECE009CF421 /* ViewController.h */,
+				1801794A1CF69ECE009CF421 /* ViewController.m */,
+				1801794C1CF69ECE009CF421 /* Main.storyboard */,
+				1801794F1CF69ECE009CF421 /* Assets.xcassets */,
+				180179511CF69ECE009CF421 /* LaunchScreen.storyboard */,
+				180179541CF69ECE009CF421 /* Info.plist */,
+				180179431CF69ECE009CF421 /* Supporting Files */,
+			);
+			path = DYImageCache;
+			sourceTree = "<group>";
+		};
+		180179431CF69ECE009CF421 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				180179441CF69ECE009CF421 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1801795C1CF69ECE009CF421 /* DYImageCacheTests */ = {
+			isa = PBXGroup;
+			children = (
+				1801795D1CF69ECE009CF421 /* DYImageCacheTests.m */,
+				1801795F1CF69ECE009CF421 /* Info.plist */,
+			);
+			path = DYImageCacheTests;
+			sourceTree = "<group>";
+		};
+		180179671CF69ECE009CF421 /* DYImageCacheUITests */ = {
+			isa = PBXGroup;
+			children = (
+				180179681CF69ECE009CF421 /* DYImageCacheUITests.m */,
+				1801796A1CF69ECE009CF421 /* Info.plist */,
+			);
+			path = DYImageCacheUITests;
+			sourceTree = "<group>";
+		};
+		18B9DC001CF7FDC30098F2E8 /* DYImageCache */ = {
+			isa = PBXGroup;
+			children = (
+				18B9DC011CF7FDC30098F2E8 /* Downloader */,
+				18B9DC061CF7FDC30098F2E8 /* DownloaderCache */,
+				18B9DC071CF7FDC30098F2E8 /* ImageCategory */,
+				18B9DC081CF7FDC30098F2E8 /* Manager */,
+			);
+			path = DYImageCache;
+			sourceTree = "<group>";
+		};
+		18B9DC011CF7FDC30098F2E8 /* Downloader */ = {
+			isa = PBXGroup;
+			children = (
+				18B9DC021CF7FDC30098F2E8 /* DYDownloaderOperation.h */,
+				18B9DC031CF7FDC30098F2E8 /* DYDownloaderOperation.m */,
+				18B9DC041CF7FDC30098F2E8 /* DYImageDownloader.h */,
+				18B9DC051CF7FDC30098F2E8 /* DYImageDownloader.m */,
+			);
+			path = Downloader;
+			sourceTree = "<group>";
+		};
+		18B9DC061CF7FDC30098F2E8 /* DownloaderCache */ = {
+			isa = PBXGroup;
+			children = (
+				18B9DC0E1CF81B410098F2E8 /* DYImageCache.h */,
+				18B9DC0F1CF81B410098F2E8 /* DYImageCache.m */,
+			);
+			path = DownloaderCache;
+			sourceTree = "<group>";
+		};
+		18B9DC071CF7FDC30098F2E8 /* ImageCategory */ = {
+			isa = PBXGroup;
+			children = (
+				18B9DC141CF83E800098F2E8 /* UIImageView+DYImageViewCache.h */,
+				18B9DC151CF83E800098F2E8 /* UIImageView+DYImageViewCache.m */,
+			);
+			path = ImageCategory;
+			sourceTree = "<group>";
+		};
+		18B9DC081CF7FDC30098F2E8 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				18B9DC111CF835DF0098F2E8 /* DYImageCacheManager.h */,
+				18B9DC121CF835DF0098F2E8 /* DYImageCacheManager.m */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1801793F1CF69ECE009CF421 /* DYImageCache */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1801796D1CF69ECE009CF421 /* Build configuration list for PBXNativeTarget "DYImageCache" */;
+			buildPhases = (
+				1801793C1CF69ECE009CF421 /* Sources */,
+				1801793D1CF69ECE009CF421 /* Frameworks */,
+				1801793E1CF69ECE009CF421 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DYImageCache;
+			productName = DYImageCache;
+			productReference = 180179401CF69ECE009CF421 /* DYImageCache.app */;
+			productType = "com.apple.product-type.application";
+		};
+		180179581CF69ECE009CF421 /* DYImageCacheTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 180179701CF69ECE009CF421 /* Build configuration list for PBXNativeTarget "DYImageCacheTests" */;
+			buildPhases = (
+				180179551CF69ECE009CF421 /* Sources */,
+				180179561CF69ECE009CF421 /* Frameworks */,
+				180179571CF69ECE009CF421 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1801795B1CF69ECE009CF421 /* PBXTargetDependency */,
+			);
+			name = DYImageCacheTests;
+			productName = DYImageCacheTests;
+			productReference = 180179591CF69ECE009CF421 /* DYImageCacheTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		180179631CF69ECE009CF421 /* DYImageCacheUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 180179731CF69ECE009CF421 /* Build configuration list for PBXNativeTarget "DYImageCacheUITests" */;
+			buildPhases = (
+				180179601CF69ECE009CF421 /* Sources */,
+				180179611CF69ECE009CF421 /* Frameworks */,
+				180179621CF69ECE009CF421 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				180179661CF69ECE009CF421 /* PBXTargetDependency */,
+			);
+			name = DYImageCacheUITests;
+			productName = DYImageCacheUITests;
+			productReference = 180179641CF69ECE009CF421 /* DYImageCacheUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		180179381CF69ECE009CF421 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = TOPRAND;
+				TargetAttributes = {
+					1801793F1CF69ECE009CF421 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					180179581CF69ECE009CF421 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 1801793F1CF69ECE009CF421;
+					};
+					180179631CF69ECE009CF421 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 1801793F1CF69ECE009CF421;
+					};
+				};
+			};
+			buildConfigurationList = 1801793B1CF69ECE009CF421 /* Build configuration list for PBXProject "DYImageCache" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 180179371CF69ECE009CF421;
+			productRefGroup = 180179411CF69ECE009CF421 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1801793F1CF69ECE009CF421 /* DYImageCache */,
+				180179581CF69ECE009CF421 /* DYImageCacheTests */,
+				180179631CF69ECE009CF421 /* DYImageCacheUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1801793E1CF69ECE009CF421 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				180179531CF69ECE009CF421 /* LaunchScreen.storyboard in Resources */,
+				180179501CF69ECE009CF421 /* Assets.xcassets in Resources */,
+				1801794E1CF69ECE009CF421 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		180179571CF69ECE009CF421 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		180179621CF69ECE009CF421 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1801793C1CF69ECE009CF421 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1801794B1CF69ECE009CF421 /* ViewController.m in Sources */,
+				180179481CF69ECE009CF421 /* AppDelegate.m in Sources */,
+				180179451CF69ECE009CF421 /* main.m in Sources */,
+				18B9DC161CF83E800098F2E8 /* UIImageView+DYImageViewCache.m in Sources */,
+				18B9DC091CF7FDC30098F2E8 /* DYDownloaderOperation.m in Sources */,
+				18B9DC0A1CF7FDC30098F2E8 /* DYImageDownloader.m in Sources */,
+				18B9DC101CF81B410098F2E8 /* DYImageCache.m in Sources */,
+				18B9DC131CF835DF0098F2E8 /* DYImageCacheManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		180179551CF69ECE009CF421 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1801795E1CF69ECE009CF421 /* DYImageCacheTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		180179601CF69ECE009CF421 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				180179691CF69ECE009CF421 /* DYImageCacheUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1801795B1CF69ECE009CF421 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1801793F1CF69ECE009CF421 /* DYImageCache */;
+			targetProxy = 1801795A1CF69ECE009CF421 /* PBXContainerItemProxy */;
+		};
+		180179661CF69ECE009CF421 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1801793F1CF69ECE009CF421 /* DYImageCache */;
+			targetProxy = 180179651CF69ECE009CF421 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1801794C1CF69ECE009CF421 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1801794D1CF69ECE009CF421 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		180179511CF69ECE009CF421 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				180179521CF69ECE009CF421 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1801796B1CF69ECE009CF421 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		1801796C1CF69ECE009CF421 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1801796E1CF69ECE009CF421 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = DYImageCache/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.toprand.DYImageCache;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		1801796F1CF69ECE009CF421 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = DYImageCache/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.toprand.DYImageCache;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		180179711CF69ECE009CF421 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = DYImageCacheTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.toprand.DYImageCacheTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DYImageCache.app/DYImageCache";
+			};
+			name = Debug;
+		};
+		180179721CF69ECE009CF421 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = DYImageCacheTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.toprand.DYImageCacheTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DYImageCache.app/DYImageCache";
+			};
+			name = Release;
+		};
+		180179741CF69ECE009CF421 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = DYImageCacheUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.toprand.DYImageCacheUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = DYImageCache;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		180179751CF69ECE009CF421 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = DYImageCacheUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.toprand.DYImageCacheUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = DYImageCache;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1801793B1CF69ECE009CF421 /* Build configuration list for PBXProject "DYImageCache" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1801796B1CF69ECE009CF421 /* Debug */,
+				1801796C1CF69ECE009CF421 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1801796D1CF69ECE009CF421 /* Build configuration list for PBXNativeTarget "DYImageCache" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1801796E1CF69ECE009CF421 /* Debug */,
+				1801796F1CF69ECE009CF421 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		180179701CF69ECE009CF421 /* Build configuration list for PBXNativeTarget "DYImageCacheTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				180179711CF69ECE009CF421 /* Debug */,
+				180179721CF69ECE009CF421 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		180179731CF69ECE009CF421 /* Build configuration list for PBXNativeTarget "DYImageCacheUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				180179741CF69ECE009CF421 /* Debug */,
+				180179751CF69ECE009CF421 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 180179381CF69ECE009CF421 /* Project object */;
+}
