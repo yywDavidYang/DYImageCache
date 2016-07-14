@@ -44,7 +44,7 @@
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
     [self initData];
-
+    UIView *view = [[UIView alloc]init];
 //    self.tableView = [[UITableView alloc]init];
 //    self.tableView.frame = self.view.bounds;
 //    self.tableView.backgroundColor = [UIColor orangeColor];
